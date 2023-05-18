@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import sys
+from datetime import datetime
+
+for i, line in enumerate(sys.stdin):
+    
+    # Salto la prima riga
+    if i == 0:
+        continue
+        
+    row = line.strip().split(',')
+    if len(row) >= 10:
+        product_id = row[1]
+        review = row[9]
+        
+        try:
+            timestamp = int(row[7])
+            year = datetime.fromtimestamp(timestamp).strftime('%Y')
+        
+            print(f'{year}\t{product_id}\t{review}')
+        
+        except ValueError:
+            continue
