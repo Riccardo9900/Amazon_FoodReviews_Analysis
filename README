@@ -1,3 +1,3 @@
-In this project we'll analyze Kaggle's amazon food reviews dataset. In the 1st job we will generate, for each year, the 10 products that have received the most
+In this project i analyzed Kaggle's amazon food reviews dataset. In the 1st job i generated, for each year, the 10 products that have received the most
 number of reviews and, for each of them, the 5 words with at least 4 characters most frequently
 used in reviews (text field), indicating, for each word, the number of occurrences of the word
